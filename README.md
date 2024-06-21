@@ -43,7 +43,9 @@ python3 ~/manage.py createsuperuser
 2. Open Chrome and type HTTP://localhost:8080
 
 if you face the error "404 page not found",
+[ref](https://chatgpt.com/share/09bf9b74-ae26-4ca0-86d9-f0ca8cddee34)
 1. open the file "docker-compose.yml in cvat folder
 2. find 8080 and change it to 8081
 8080:8080 -> 8081:8080
 3. Open Chrome and type HTTP://localhost:8081
+
