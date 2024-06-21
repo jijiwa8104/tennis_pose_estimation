@@ -24,7 +24,26 @@
 2. Type the command below
 $ lsb_release -a
 ```
-4. 
-5. 
-6. 
-7. 
+
+## Docker Installation
+[ref](https://www.docker.com/products/docker-desktop/)
+
+## CVAT Installation
+[ref](https://docs.cvat.ai/docs/administration/basics/installation/)
+1. (CMD) Type the commands below
+```
+git clone https://github.com/opencv/cvat.git
+cd cvat
+docker compose up -d
+# enter docker image first
+docker exec -it cvat_server /bin/bash
+# then run
+python3 ~/manage.py createsuperuser
+```
+2. Open Chrome and type HTTP://localhost:8080
+
+if you face the error "404 page not found",
+1. open the file "docker-compose.yml in cvat folder
+2. find 8080 and change it to 8081
+8080:8080 -> 8081:8080
+3. Open Chrome and type HTTP://localhost:8081
