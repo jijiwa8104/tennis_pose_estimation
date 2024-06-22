@@ -56,3 +56,14 @@ if you face the error "404 page not found",
 docker run --detach --publish 8070:8070 --volume /var/run/docker.sock:/var/run/docker.sock --name nuclio-dashboard quay.io/nuclio/dashboard:stable-amd64
 ```
 2. Browse to http://localhost:8070
+
+## yoloV5
+```
+git clone https://github.com/ultralytics/yolov5.git
+cd yolov5
+pip install -r requirements.txt
+```
+```
+## 모델 및 가중치 다운로드
+curl -L -o models/yolov5s.pt https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5s.pt
+```
