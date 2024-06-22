@@ -49,3 +49,9 @@ if you face the error "404 page not found",
 8080:8080 -> 8081:8080
 3. Open Chrome and type HTTP://localhost:8081
 
+## Nuclio Installation
+[ref](https://docs.nuclio.io/en/stable/tasks/quick-start.html)
+1. Type the command below
+```(CMD)
+docker run --detach --publish 8070:8070 --volume /var/run/docker.sock:/var/run/docker.sock --name nuclio-dashboard quay.io/nuclio/dashboard:stable-amd64
+```
