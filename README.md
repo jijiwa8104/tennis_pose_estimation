@@ -55,3 +55,4 @@ if you face the error "404 page not found",
 ```(CMD)
 docker run --detach --publish 8070:8070 --volume /var/run/docker.sock:/var/run/docker.sock --name nuclio-dashboard quay.io/nuclio/dashboard:stable-amd64
 ```
+2. Open Chrome and type 
